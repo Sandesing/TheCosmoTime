@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="Fondo">
+        <div class="container" id="Form">
+            <h1>Cosmo form</h1>
+            <form action="mmm.php" method="POST">
+                <div class="form-group">
+                    <label for="nombre_completo">Nombre completo:</label>
+                    <input type="text" name="nombre_completo" id="nombre_completo" required minlength="5" maxlength="60">
+                </div>
+    
+                <div class="form-group">
+                    <label for="correo_electronico">Correo electrónico:</label>
+                    <input type="email" name="correo_electronico" id="correo_electronico" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="numero_telefonico">Número telefónico:</label>
+                    <input type="tel" name="numero_telefonico" id="numero_telefonico" required minlength="6" maxlength="16" pattern="[0-9+\- ]+">
+                </div>
+    
+                <div class="form-group">
+                    <label for="tipo_identificacion">Tipo de identificación:</label>
+                    <select name="tipo_identificacion" id="tipo_identificacion" required>
+                        <option value="CI">C.C</option>
+                        <option value="Cpa">T.I</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label for="numero_identificacion">Número de identificación:</label>
+                    <input type="number" name="numero_identificacion" id="numero_identificacion" required>
+                </div>
+    
+                <div class="form-group">
+                    <button class="btn read-more" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
