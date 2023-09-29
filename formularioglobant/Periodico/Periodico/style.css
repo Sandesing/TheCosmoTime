@@ -1,0 +1,264 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  html{
+  scroll-behavior: smooth;
+  
+  }
+  .section{
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:fixed;
+    right: 0;
+    left: 0;
+    background-color: white;
+    box-shadow:0 0 10px rgba(0,0,0,0.5) ;
+    z-index: 100;
+  }
+  .section nav .logo img{
+  width: 100px;
+  cursor: pointer;
+  margin: 7px 0;
+  }
+  .section nav ul{
+  list-style: none;
+  }
+  .section nav ul li{
+    display: inline-block;
+    margin:0 15px ;
+  }
+  .section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0,1s;
+   } 
+   .section nav ul li a::after{
+    content: " ";
+    width: 0; 
+    height: 2px;
+    background:rgb(250, 20, 120);
+    display: block;
+    transition: 0.2s linear;
+   }
+   .section nav ul li a:hover::after{
+    width: 100%;
+     }
+   .section nav ul li a:hover{
+    color: rgb(250, 20, 120);
+    display: block;
+   }
+  .secion .main{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+  
+  }
+  .secion .main .men_text h1{
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+   } 
+   .secion .main .men_text h1 span{
+    margin-left: 15px;
+  color:rgb(250, 20, 120);
+  font-family: mv boli;
+  line-height: 22px;
+   }
+   .secion .main .main_image img{
+    width: 7000px;
+    position: relative;
+    left: 70px;
+   }
+  .secion p{
+    text-align: justify;
+    position: relative;
+    left: 123px;
+    bottom: 120px;
+    line-height: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+  }
+  .secion .main_btn{
+    background-color: rgb(250, 20, 120);
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 25px;
+  }
+  .secion .main_btn a{
+    color: #fff;
+  margin-right: none;
+  }
+  .secion .main_btn i{
+    color: #fff;
+    transition: 0,3s;
+  }
+  .secion .main_btn:hover i{
+    transform: translateX(17px);
+  }
+  .menu{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+   } 
+  .menu .menu_menu2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  }
+  .menu .menu_menu2 .imagen img{
+  width: 800px;
+  position: relative;
+  top: 60px;
+  }
+  .menu .menu_menu2 .menu-text h1 span{
+  color:rgb(250, 20, 120);
+  margin-right: 15px;
+  font-family: mv boli;
+  }
+  .menu .menu_menu2 .menu-text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+  }
+  .menu .menu_menu2 .menu-text h3{
+    font-size: 30px;
+    margin: 0 0 50px 0;
+  }
+  .menu .menu_menu2 .menu-text p{
+    width: 650px;
+    text-align: justify;
+    margin-right: 300px;
+    line-height: 22px;
+  }
+  
+  /*productos*/
+  
+  
+  .productos{
+  width: 100%;
+  margin-top: 170px;
+
+  }
+  .productos h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .productos h1 span{
+    color:rgb(250, 20, 120);
+    margin-left: 15px;
+    font-family: mv boli;
+  }
+  .productos .productos_caja{
+    width: 95%;
+    margin-left: 85px;
+    margin-right: 85px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .productos .productos_caja .productos_mmm{
+    width: 350px;
+    height: 380px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgb(250, 20, 120);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 25%;
+
+  }
+  .productos .productos_caja .productos_mmm .productos_img img{
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+  }
+  .productos .productos_caja .productos_mmm .productos_img:hover img{
+  transform: scale(1.3);
+  }
+  .descripcion{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color :rgb(250, 20, 120);
+   font-size: 25px;
+  }
+  .productos .productos_caja .productos_mmm .productos_info h2{
+  width: 60%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-size: 25px;
+  color: rgb(250, 20, 120);
+  }
+  .productos .productos_caja .productos_mmm .productos_info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+  }
+  .productos .productos_caja .productos_mmm .productos_info h3{
+    text-align: center;
+    margin-top: 10px;
+  }
+.main-img{
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 750px;
+}
+
+.proposito{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: rgb(250, 20, 120);
+  font-size: 15px;
+}
+
+.propositotexto{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+.productos_img{
+  margin: auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ border-radius: 25%;
+}
+
+.productos_info{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.menu-icono{
+  text-align: center;
+  margin: auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ border-radius: 25%;
+ color: blue;
+}
